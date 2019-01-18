@@ -12,19 +12,19 @@
         <form method="post" action="<?php echo  base_url(); ?>/index.php/contact/save">
             <div class="input form-group">
                 <label for="">Tên</label>
-                <input type="text" name="name" class="form-control">
+                <input type="text" name="name" class="form-control" required>
             </div>
             <div class="input form-group">
                 <label for="">Số điện thoại 1</label>
-                <input type="text" name="phone1" class="form-control">
+                <input type="number" name="phone1" class="form-control" required>
             </div>
             <div class="input form-group">
                 <label for="">Số điện thoại 2</label>
-                <input type="text" name="phone2" class="form-control" >
+                <input type="number" name="phone2" class="form-control">
             </div>
             <div class="input form-group">
                 <label for="">Email</label>
-                <input type="text" name="email" class="form-control">
+                <input type="email" name="email" class="form-control" required>
             </div>
             <div class="input form-group">
                 <label for="">Facebook</label>
@@ -32,7 +32,7 @@
             </div>
             <div class="input form-group">
                 <label for="">Company</label>
-                <input type="text" name="company" class="form-control">
+                <input type="text" name="company" class="form-control" required>
             </div>
             <button class="btn btn-info btn-block">Thêm mới</button>
         </form>

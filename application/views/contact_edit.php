@@ -13,17 +13,17 @@
         <form method="post" action="<?php echo  base_url(); ?>/index.php/contact/save/<?= $contact_item->id?>">
             <div class="input form-group mb-5>
                 <label for="">Tên</label>
-                <input type="text"  class="form-control"  name="name" value="<?= $contact_item->name ?>">
+                <input type="text"  class="form-control"  name="name" value="<?= $contact_item->name ?>" required>
                 <label for="">SDT1</label>
-                <input type="text" class="form-control"  name="phone1" value="<?= $contact_item->phone1 ?>">
+                <input type="number" class="form-control"  name="phone1" value="<?= $contact_item->phone1 ?>" required>
                 <label for="">SDT2</label>
-                <input type="text" class="form-control"  name="phone2" value="<?= $contact_item->phone2 ?>">
+                <input type="number" class="form-control"  name="phone2" value="<?= $contact_item->phone2 ?>">
                 <label for="">Email</label>
-                <input type="text" class="form-control"  name="email" value="<?= $contact_item->email ?>">
+                <input type="email" class="form-control"  name="email" value="<?= $contact_item->email ?>" required>
                 <label for="">Facebook</label>
                 <input type="text" class="form-control"  name="fb" value="<?= $contact_item->fb ?>">
                 <label for="">Company</label>
-                <input type="text" class="form-control"  name="company" value="<?= $contact_item->company ?>">
+                <input type="text" class="form-control"  name="company" value="<?= $contact_item->company ?>" required>
             </div>
             <button class="btn btn-info">Cập nhật</button>
             <input type="button" onclick="remove(<?= $contact_item->id?>)" value="Xóa" class="btn btn-info" />
